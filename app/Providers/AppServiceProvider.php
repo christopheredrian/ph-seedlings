@@ -13,7 +13,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // For SQLSTATE 4200 error
+        \Schema::defaultStringLength(191);
     }
 
     /**
